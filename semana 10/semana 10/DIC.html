@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario de Datos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr.space-row > td {
+            padding-top: 20px; 
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Diccionario de Datos</h2>
+
+<table>
+  <tr>
+    <th>Tabla</th>
+    <th>Nombre del Campo</th>
+    <th>Descripción</th>
+    <th>Tipo de Dato</th>
+    <th>Longitud de Caracter</th>
+    <th>Es Requerido</th>
+    <th>Acepta Valores Nulos</th>
+  </tr>
+  <!-- Tabla: empleado -->
+  <tr>
+    <td>empleado</td>
+    <td>id</td>
+    <td>Identificador único del empleado</td>
+    <td>INT</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>empleado</td>
+    <td>nombre</td>
+    <td>Nombre del empleado</td>
+    <td>VARCHAR</td>
+    <td>50</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>empleado</td>
+    <td>apellido</td>
+    <td>Apellido del empleado</td>
+    <td>VARCHAR</td>
+    <td>50</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>empleado</td>
+    <td>dui</td>
+    <td>Número de DUI del empleado</td>
+    <td>VARCHAR</td>
+    <td>10</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>empleado</td>
+    <td>id_salario</td>
+    <td>Identificador del salario asociado al empleado</td>
+    <td>INT</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>empleado</td>
+    <td>id_sector</td>
+    <td>Identificador del sector de trabajo del empleado</td>
+    <td>INT</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+
+  <tr class="space-row">
+    <td colspan="6"></td>
+  </tr>
+
+  <!--Salario-->
+
+  <tr>
+    <td>id_salario</td>
+    <td>id</td>
+    <td>Identificador único del salario</td>
+    <td>INT</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>id_salario</td>
+    <td>horas_trabajadas</td>
+    <td>Número de horas trabajadas</td>
+    <td>INT</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>id_salario</td>
+    <td>sueldo_horas</td>
+    <td>Sueldo por horas trabajadas</td>
+    <td>INT</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>id_salario</td>
+    <td>fecha_pago</td>
+    <td>Fecha de pago del salario</td>
+    <td>INT</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+
+  <tr class="space-row">
+    <td colspan="6"></td>
+  </tr>
+
+  <!-- Tabla: sector_de_trabajo -->
+  <tr>
+    <td>sector_de_trabajo</td>
+    <td>id</td>
+    <td>Identificador único del sector de trabajo</td>
+    <td>INT</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>sector_de_trabajo</td>
+    <td>id_empleado</td>
+    <td>Identificador del empleado asociado al sector</td>
+    <td>INT</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>sector_de_trabajo</td>
+    <td>ubicacion</td>
+    <td>Ubicación del sector de trabajo</td>
+    <td>VARCHAR</td>
+    <td>50</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>sector_de_trabajo</td>
+    <td>descripcion</td>
+    <td>Descripción del sector de trabajo</td>
+    <td>VARCHAR</td>
+    <td>50</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>sector_de_trabajo</td>
+    <td>nombre_del_sector</td>
+    <td>Nombre del sector de trabajo</td>
+    <td>VARCHAR</td>
+    <td>50</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>sector_de_trabajo</td>
+    <td>id_Tipo_residuo</td>
+    <td>Identificador del tipo de residuo asociado al sector</td>
+    <td>INT</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+
+  <tr class="space-row">
+    <td colspan="6"></td>
+  </tr>
+
+  <!-- Tabla: tipo_de_residuo -->
+  <tr>
+    <td>tipo_de_residuo</td>
+    <td>id</td>
+    <td>Identificador único del tipo de residuo</td>
+    <td>INT</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>tipo_de_residuo</td>
+    <td>nombre_de_residuo</td>
+    <td>Nombre del residuo</td>
+    <td>VARCHAR</td>
+    <td>50</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>tipo_de_residuo</td>
+    <td>descripcion</td>
+    <td>Descripción del residuo</td>
+    <td>VARCHAR</td>
+    <td>50</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>tipo_de_residuo</td>
+    <td>Breve_descripcion_de_tratamiento</td>
+    <td>Breve descripción del tratamiento del residuo</td>
+    <td>VARCHAR</td>
+    <td>50</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>tipo_de_residuo</td>
+    <td>id_planta_tratamiento</td>
+    <td>Identificador de la planta de tratamiento asociada al residuo</td>
+    <td>INT</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>tipo_de_residuo</td>
+    <td>ubicacion</td>
+    <td>Ubicación del tipo de residuo</td>
+    <td>VARCHAR</td>
+    <td>50</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+
+  <tr class="space-row">
+    <td colspan="6"></td>
+  </tr>
+
+  <!-- Tabla: tratamiento_residuos -->
+  <tr>
+    <td>tratamiento_residuos</td>
+    <td>id</td>
+    <td>Identificador único del tratamiento de residuos</td>
+    <td>INT</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>tratamiento_residuos</td>
+    <td>Descripcion_proceso</td>
+    <td>Descripción del proceso de tratamiento de residuos</td>
+    <td>VARCHAR</td>
+    <td>50</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>tratamiento_residuos</td>
+    <td>Tiempo_horas_trabajo</td>
+    <td>Tiempo estimado de trabajo para el tratamiento</td>
+    <td>TIME</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>tratamiento_residuos</td>
+    <td>volumen_de_lote_a_tratar</td>
+    <td>Volumen de lote a tratar en unidades</td>
+    <td>INT</td>
+    <td>N/A</td>
+    <td>Sí</td>
+    <td>No</td>
+  </tr>
+</table>
+
+<hr>
+
+<table>
+    <tr>
+      <th>Tabla Padre</th>
+      <th>Tabla Hija</th>
+      <th>Tipo de Relación</th>
+    </tr>
+    <!-- Relación: empleado - id_salario -->
+    <tr>
+      <td>empleado</td>
+      <td>id_salario</td>
+      <td>Uno a Uno</td>
+    </tr>
+    <!-- Relación: empleado - sector_de_trabajo -->
+    <tr>
+      <td>empleado</td>
+      <td>sector_de_trabajo</td>
+      <td>Uno a Muchos</td>
+    </tr>
+    <!-- Relación: sector_de_trabajo - tipo_de_residuo -->
+    <tr>
+      <td>sector_de_trabajo</td>
+      <td>tipo_de_residuo</td>
+      <td>Uno a Muchos</td>
+    </tr>
+    <!-- Relación: tipo_de_residuo - tratamiento_residuos -->
+    <tr>
+      <td>tipo_de_residuo</td>
+      <td>tratamiento_residuos</td>
+      <td>Uno a Muchos</td>
+    </tr>
+</table>
+
+<p>
+    <strong>Tabla Padre</strong>: La tabla principal o "padre" en la relación.
+    <br>
+    <strong>Tabla Hija</strong>: La tabla secundaria o "hija" en la relación.
+    <br>
+    <strong>Tipo de Relación</strong>: El tipo de relación entre las tablas. "Uno a Uno" indica que cada registro en la tabla padre está asociado con exactamente un registro en la tabla hija. "Uno a Muchos" indica que cada registro en la tabla padre puede estar asociado con varios registros en la tabla hija.
+</p>
+
+</body>
+</html>
